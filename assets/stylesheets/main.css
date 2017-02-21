@@ -1,0 +1,329 @@
+/*
+=========================================
+Reset
+=========================================
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+=========================================
+Custom Styles
+=========================================
+*/
+
+body{
+	background-color: #22252c;
+	font: 400 16px/22px "PT Sans", Arial, sans-serif;
+}
+
+/*Color Themes
+
+/*
+Coral: #E14658;
+Navy: #22252c;
+Mountain: #3f3250;
+Scrub: #C0B3A0;
+*/
+/*
+==============================
+Grid
+===========================
+*/
+
+*,
+*:before,
+*:after {
+	  -webkit-box-sizing: border-box;
+   		 -moz-box-sizing: border-box;
+        	  box-sizing: border-box;
+}
+
+.container, 
+.grid{
+	margin: 0 auto;
+	width: 960px;
+}
+.container {	
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.grid, 
+.col-1-3, 
+.col-2-3,
+.col-1-2{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.col-1-3, 
+.col-2-3,
+.col-1-2{
+	display: inline-block;
+	vertical-align: top;
+}
+.col-1-3 {
+	width: 33.33%;
+}
+.col-2-3 {
+	width: 66.66%;
+}
+.col-1-2{
+	width: 50%;
+}
+
+/*
+==============================
+Typography
+==============================
+*/
+
+h1, h3, h4, h5, p {
+	margin-bottom: 22px;
+}
+h1, h2, h3, h4{
+	color: #3f3250;
+}
+h1{
+	font-size: 36px;
+	line-height: 44px;
+	font-weight: 700;
+}
+h2{
+	font-size: 24px;
+	line-height: 44px;
+	font-weight: 700;
+}
+h3{
+	font-size: 21px;
+}
+h4{
+	font-size: 18px;
+}
+h5 {
+  color: #3f3250;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+strong {
+  font-weight: 400;
+}
+cite, em {
+  font-style: italic;
+}
+
+/*
+==============================
+Header
+==============================
+*/
+
+.logo{
+	padding: 0 0 22px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.logo,
+.primary-nav,
+.secondary-nav{
+	line-height: 36px;
+}
+
+h1.logo{
+	font-size: 24px;
+}
+.primary-nav{
+	text-align: left;
+}
+.secondary-nav{
+	text-align: right;
+}
+/*
+==============================
+Footer
+==============================
+*/
+
+footer{
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+
+small{
+	font-size: 14px;
+	text-align: left;
+	margin-left: -20px;
+	line-height: 28px;
+	color: #C0B3A0;
+}
+
+.nav-bottom{
+	text-align: right;
+	margin-right: -20px;
+	font-size: 14px;
+	line-height: 28px;
+}
+/*
+==============================
+Row
+==============================
+*/
+
+.row{
+	padding: 22px 0 22px 0;
+	background-color: #fff;
+	position: relative;
+}
+
+/*
+==============================
+Navigation
+===========================
+*/
+.nav li{
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+/*
+==============================
+Links
+==============================
+*/
+
+a {
+  color: #C0B3A0;
+  text-decoration: none;
+}
+a:hover {
+  color: #E14658;
+}
+p a {
+	border-bottom: 1px solid #C0B3A0;
+}
+.primary-header a,
+.primary-footer a {
+	color: #C0B3A0
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+	color: #E14658;
+}
+/*
+==============================
+Home
+==============================
+*/
+
+.hero{
+	padding: 22px 80px 66px 80px;
+	text-align: center;
+}
+.hero p{
+	font-size: 18px;
+	color: #3f3250;
+}
+.teaser
+{
+	text-align: center;
+	padding: 40px 20px 40px 20px;
+	border: 2px solid #E14658;
+	border-radius: 10px;
+	color: #3f3250;
+}
+
+/*
+==============================
+Images
+==============================
+*/
+
+
+.img-container{
+	overflow:hidden;
+	height: 500px;
+	padding: 0;
+}
+
+.img-container h1,
+.img-container h2{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.img-container h1{
+	font-size: 72px;
+	top: 150px;
+}
+
+.img-container h2{
+	font-size: 54px;
+	top: 230px;
+}
+
+img{
+	width: 100%;
+	border-top: 4px solid #3f3250;
+	position: relative;
+}
+
+/*
+==============================
+Unique Image Positioning
+==============================
+*/
+#carson-falls{
+	bottom: 50px;
+}
+#may-lake{
+	bottom: 400px;
+}
+
