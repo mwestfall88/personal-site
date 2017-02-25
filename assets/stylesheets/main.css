@@ -59,8 +59,8 @@ Custom Styles
 */
 
 body{
-	background-color: #22252c;
-	font: 400 16px/22px "PT Sans", Arial, sans-serif;
+	background-color: #fff;
+	font: 400 16px/21px "Gotham SSm A", "Gotham SSm B", "PT Sans", Arial, sans-serif
 }
 
 /*Color Themes
@@ -124,10 +124,10 @@ Typography
 */
 
 h1, h3, h4, h5, p {
-	margin-bottom: 22px;
+	/*margin-bottom: 22px*/
 }
 h1, h2, h3, h4{
-	color: #3f3250;
+	/*color: #333;*/
 }
 h1{
 	font-size: 36px;
@@ -146,7 +146,7 @@ h4{
 	font-size: 18px;
 }
 h5 {
-  color: #3f3250;
+  /*color: #333;*/
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -163,9 +163,11 @@ cite, em {
 Header
 ==============================
 */
+header{
+	background-color: #fff;
+}
 
 .logo{
-	padding: 0 0 22px 0;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -185,31 +187,21 @@ h1.logo{
 .secondary-nav{
 	text-align: right;
 }
-/*
-==============================
-Footer
-==============================
-*/
 
-footer{
-	padding-top: 25px;
-	padding-bottom: 50px;
+.primary-nav ul li,
+.secondary-nav ul li{
+	line-height: 21px;
+	font-size: 16px;
+	padding-left: 12px;
+	padding-right: 12px;
+	font-weight: 700;
 }
 
-small{
-	font-size: 14px;
-	text-align: left;
-	margin-left: -20px;
-	line-height: 28px;
-	color: #C0B3A0;
-}
+/*Gotham SSm A,Gotham SSm B,sans-serif; - Header Font
+14px
+300 weight
+line height, 21px, left, right 16px padding
 
-.nav-bottom{
-	text-align: right;
-	margin-right: -20px;
-	font-size: 14px;
-	line-height: 28px;
-}
 /*
 ==============================
 Row
@@ -217,8 +209,8 @@ Row
 */
 
 .row{
+	width: 100%;
 	padding: 22px 0 22px 0;
-	background-color: #fff;
 	position: relative;
 }
 
@@ -239,11 +231,11 @@ Links
 */
 
 a {
-  color: #C0B3A0;
+  color: #333;
   text-decoration: none;
 }
 a:hover {
-  color: #E14658;
+  color: #00adef;
 }
 p a {
 	border-bottom: 1px solid #C0B3A0;
@@ -261,14 +253,23 @@ p a {
 Home
 ==============================
 */
+.hero-row{
+  background: #474646; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(50deg, #474646, #222); /* Safari 5.1-6.0 */
+  background: -o-linear-gradient(50deg, #474646, #222); /* For Opera 11.6-12.0 */
+  background: -moz-radial-gradient(50deg, #474646, #222); /* For Firefox 3.6-15 */
+  background: linear-gradient(50deg, #474646, #222); /* Standard syntax */
+  height: 500px;
+}
 
 .hero{
 	padding: 22px 80px 66px 80px;
 	text-align: center;
 }
+
 .hero p{
 	font-size: 18px;
-	color: #3f3250;
+	color: #fff;
 }
 .teaser
 {
@@ -276,12 +277,13 @@ Home
 	padding: 40px 20px 40px 20px;
 	border: 2px solid #E14658;
 	border-radius: 10px;
-	color: #3f3250;
+	color: #333;
 }
+.teaser
 
 /*
 ==============================
-Images
+Images & Overlaid Text
 ==============================
 */
 
@@ -293,28 +295,80 @@ Images
 }
 
 .img-container h1,
-.img-container h2{
+.img-container h2,
+.img-container h3,
+.img-container h4{
 	position: absolute;
-	width: 100%;
 	text-align: center;
 }
 
 .img-container h1{
+	width: 100%;
 	font-size: 72px;
 	top: 150px;
 }
 
 .img-container h2{
+	width: 100%;
 	font-size: 54px;
 	top: 230px;
 }
-
+.img-container h3{
+	width: 100%;
+	top: 310px;
+}
+.img-container h4{
+	color: #fff;
+	top: 420px;
+	width: inherit;
+}
 img{
 	width: 100%;
 	border-top: 4px solid #3f3250;
 	position: relative;
 }
+.dark-text{
+	color: #3f3250;
+}
+.white-text h1,
+.white-text h2{
+	color: #fff;
+}
+#test{
+	border: 1px solid red;
+}
+/*
+==============================
+Footer
+==============================
+*/
 
+footer{
+	padding-top: 25px;
+	padding-bottom: 50px;
+	background-color: #0d122b;
+	margin-bottom: 0;
+}
+small{
+	font-size: 14px;
+	text-align: left;
+	margin-left: -20px;
+	line-height: 28px;
+	color: #9fa2b4;
+}
+.nav-bottom{
+	text-align: right;
+	margin-right: -20px;
+	font-size: 14px;
+	line-height: 28px;
+}
+footer li a{
+  color: #9fa2b4;
+  text-decoration: none;
+}
+footer li a:hover{
+  color: #fff
+}
 /*
 ==============================
 Unique Image Positioning
@@ -326,4 +380,4 @@ Unique Image Positioning
 #may-lake{
 	bottom: 400px;
 }
-
+/*
