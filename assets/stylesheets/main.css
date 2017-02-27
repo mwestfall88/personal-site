@@ -60,16 +60,9 @@ Custom Styles
 
 body{
 	font: 200 16px/21px "Raleway", Arial, sans-serif;/*Get rid of this later*/
+	background-color: #d7dde4;
 }
 
-/*Color Themes
-
-/*
-Coral: #E14658;
-Navy: #22252c;
-Mountain: #3f3250;
-Scrub: #C0B3A0;
-*/
 /*
 ==============================
 Grid
@@ -105,6 +98,19 @@ Grid
 .col-1-2{
 	width: 50%;
 }
+.col-left{
+	border-right: 1px solid white;
+	border-top: 2px solid white;
+}
+.col-right{
+	border-left: 1px solid white;
+	border-top: 2px solid white;
+}
+.row{
+	width: 100%;
+	padding: 0 0 0 0;/*22px 0 22px 0;*/
+	position: relative;
+}
 
 /*
 ==============================
@@ -113,10 +119,11 @@ Typography
 */
 
 h1, h3, h4, h5, p {
-	/*margin-bottom: 22px*/
+	margin-bottom: 22px;
 }
-h1, h2, h3, h4{
-	/*color: #333;*/
+h1, h2, h3, h4, h5{
+	color: #333;
+	text-align: center;
 }
 h1{
 	font-size: 36px;
@@ -124,21 +131,16 @@ h1{
 	font-weight: 700;
 }
 h2{
+	color: #fff;
 	font-size: 24px;
 	line-height: 44px;
-	font-weight: 700;
+	font-weight: 200;
 }
 h3{
 	font-size: 21px;
 }
 h4{
 	font-size: 18px;
-}
-h5 {
-  /*color: #333;*/
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
 }
 strong {
   font-weight: 400;
@@ -152,27 +154,19 @@ cite, em {
 Header
 ==============================
 */
-.hero-row{
-	background-image: url("../images/landing-images/patrick-pilz-144200.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: 50% 20%;
-	height: 600px;
+header{
+	display: inline-block;
+	background-color: #fff;
 }
-header .row{
-	padding-top: 200px;
-	border: 1px solid black;
+.nav li{
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 .logo,
 .primary-nav{
 	line-height: 48px;
 	text-transform: uppercase;
-}
-h1.logo{
-	font-size: 36px;
-	font-weight: 200;
-	padding-top: 10px;
-	padding-bottom: 10px;
 }
 .primary-nav{
 	text-align: right;
@@ -185,47 +179,18 @@ h1.logo{
 	padding-top: 20px;
 	font-weight: 400;
 }
-.logo{
+.secondary-nav{
 	text-align: center;
+	padding: 10px 0 10px 0;
+}
+.secondary-nav ul li{
+	padding-left: 5%;
+	padding-right: 5%;
+	font-weight: 200;
 	text-transform: uppercase;
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
-	width: 375px;
-}
-.thick{
-	font-weight: 700;
-}
-#landing-header{
-	margin-top: 100px;
 }
 
-/*Gotham SSm A,Gotham SSm B,sans-serif; - Header Font
-14px
-300 weight
-line height, 21px, left, right 16px padding
 
-/*
-==============================
-Row
-==============================
-*/
-
-.row{
-	width: 100%;
-	padding: 22px 0 22px 0;
-	position: relative;
-}
-
-/*
-==============================
-Navigation
-===========================
-*/
-.nav li{
-	display: inline-block;
-	padding-left: 5px;
-	padding-right: 5px;
-}
 /*
 ==============================
 Links
@@ -237,62 +202,97 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #00adef;
-}
-p a {
-	border-bottom: 1px solid #C0B3A0;
-}
-.primary-header a,
-.primary-footer a {
-	color: #C0B3A0
-}
-.primary-header a:hover,
-.primary-footer a:hover {
-	color: #E14658;
+  color: red;
 }
 /*
 ==============================
-Home
+Home Page
 ==============================
 */
-.hero-row{
-  /*background: #474646; /* For browsers that do not support gradients */
-  /*background: -webkit-linear-gradient(50deg, #474646, #222); /* Safari 5.1-6.0 */
-  /*background: -o-linear-gradient(50deg, #474646, #222); /* For Opera 11.6-12.0 */
-  /*background: -moz-radial-gradient(50deg, #474646, #222); /* For Firefox 3.6-15 */
-  /*background: linear-gradient(50deg, #474646, #222); /* Standard syntax */
-}
 
 .hero{
 	padding: 22px 80px 66px 80px;
 	text-align: center;
 }
-
+.hero-row{
+	background-image: url("../images/landing-images/patrick-pilz-144200_2.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 100vh;
+}
 .hero p{
 	font-size: 18px;
 	color: #fff;
 }
-.teaser
-{
+.logo{
 	text-align: center;
-	margin: 0 10px 0 10px;
+	text-transform: uppercase;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	width: 375px;
 }
-#projects{
-	background-image: url("../images/landing-images/aj-yorio-153975.jpg");
-	background-position: 50% 20%;
+h1.logo{
+	font-weight: 200;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.thick{
+	font-weight: 700;
+}
+#landing-header{
+	padding-top: 100px;
+}
+/*
+==============================
+Secondary Pages
+==============================
+*/
+
+.secondary-hero{
 	background-size: 100%;
 	background-repeat: no-repeat;
+	background-position: center top;
+	height: 40vh;
 }
-.teaser-row{
-	background-color: grey;
-	height: 200px;
-	text-align: center;
-}
-.teaser-row h2{
+
+.secondary-hero h1{
 	font-weight: 200;
-	font-size: 48px;
-	color: #fff;
-	text-transform: uppercase;
+	font-size: 72px;
+	line-height: 180px;
+	text-align: center;
+	color: white;
+	padding-top: 10px;
+}
+
+#projects{
+	background-image: url("../images/landing-images/aj-yorio-153975.jpg");
+	background-position: 50% 30%;
+}
+.teaser{
+	height: 350px;
+	overflow: hidden;
+	margin-top: 40px;
+	position: relative;
+}
+.teaser img{
+	position: relative;
+	opacity: 0.8;
+}
+.teaser h2,
+.teaser p{
+	position: absolute;
+	width: 100%;
+	margin: auto;
+}
+.teaser h2{
+	top: 100px;
+	font-size: 40px;
+}
+.teaser p{
+	top: 160px;
+	padding: 0 20px 0 20px;
+	text-align: center;
 }
 
 /*
@@ -300,7 +300,7 @@ Home
 Images & Overlaid Text
 ==============================
 */
-
+/*
 
 .img-container{
 	overflow:hidden;
@@ -350,7 +350,7 @@ img{
 }
 #test{
 	border: 1px solid red;
-}
+}*/
 /*
 ==============================
 Footer
@@ -360,7 +360,7 @@ Footer
 footer{
 	padding-top: 25px;
 	padding-bottom: 50px;
-	background-color: #0d122b;
+	background-color: #133d6d;
 	margin-bottom: 0;
 }
 small{
@@ -368,26 +368,28 @@ small{
 	text-align: left;
 	margin-left: -20px;
 	line-height: 28px;
-	color: #9fa2b4;
+	color: #9eb3c9;
+	padding-left: 15px;
 }
 .nav-bottom{
 	text-align: right;
-	margin-right: -20px;
 	font-size: 14px;
 	line-height: 28px;
 }
 footer li a{
-  color: #9fa2b4;
+  color: #9eb3c9;
   text-decoration: none;
 }
 footer li a:hover{
   color: #fff
 }
+
 /*
 ==============================
 Unique Image Positioning
 ==============================
 */
+/*
 #carson-falls{
 	bottom: 50px;
 }
@@ -395,3 +397,15 @@ Unique Image Positioning
 	bottom: 400px;
 }
 /*
+/*
+==============================
+jQuery Classes
+==============================
+*/
+
+.hover-teaser{
+	color: black;
+}
+.transparent{
+	opacity: 0;
+}
