@@ -11,4 +11,6 @@ $(document).ready(function(){
     	$('h2', this).removeClass('hover-teaser');
     	$('p', this).addClass('transparent');
     });
+
+    
 });
