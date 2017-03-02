@@ -11,6 +11,12 @@ $(document).ready(function(){
     	$('h2', this).removeClass('hover-teaser');
     	$('p', this).addClass('transparent');
     });
+    $('#about-img-container').hover(function(){
+    	$('#me-main').addClass('hidden');
+    	$('#me-alt').removeClass('hidden');
+    },function(){
+    	$('#me-alt').addClass('hidden');
+    	$('#me-main').removeClass('hidden');
+    });
 
-    
 });
